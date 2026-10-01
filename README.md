@@ -1,6 +1,6 @@
 # Fuad Taufiqul Hakim — Portfolio
 
-Personal portfolio built with **React 19 + TypeScript + Vite 8 + Tailwind CSS 4**, deployed on **Cloudflare Pages**.
+Personal portfolio built with **React 19 + TypeScript + Vite 8 + Tailwind CSS 4**, deployed on **Cloudflare Workers**.
 
 ## Run locally
 
@@ -59,10 +59,13 @@ scripts/        image optimization
 Uses [Web3Forms](https://web3forms.com) (free, no backend). Enter your email on their site to receive an access key, then set
 `VITE_WEB3FORMS_KEY` in `.env.local` (local) and in Cloudflare (production). Without a key the form shows a "please email me" notice.
 
-## Deploying to Cloudflare Pages (free)
+## Deploying to Cloudflare (free)
 
-1. Push this repo to GitHub.
-2. Cloudflare dashboard → **Workers & Pages → Create → Pages → Connect to Git** → pick the repo.
-3. Build settings: preset **React (Vite)**, build command `npm run build`, output directory `dist`.
-4. Environment variables: `NODE_VERSION` = `22`, `VITE_WEB3FORMS_KEY` = your key.
-5. Deploy. Every push to `main` redeploys automatically. (`public/_redirects` makes deep links like `/certificates` work.)
+The site is deployed as a Cloudflare **Worker with static assets**, configured in `wrangler.jsonc`
+(`not_found_handling: "single-page-application"` makes deep links like `/certificates` work).
+
+1. Cloudflare dashboard → **Workers & Pages → Create → Import a repository** → pick this GitHub repo.
+2. Build command `npm run build`, deploy command `npx wrangler deploy`.
+3. Under **Settings → Build → Variables and secrets**, add `VITE_WEB3FORMS_KEY` (it is baked in at build time,
+   so it must be a _build_ variable, not a runtime one).
+4. Every push to `main` redeploys automatically.

@@ -1,0 +1,11 @@
+// Cloudflare Workers static-assets config (used by the Git-connected build's `wrangler deploy`).
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "portfolio-fuad",
+  "compatibility_date": "2026-09-30",
+  "assets": {
+    "directory": "./dist",
+    // Serve index.html for unknown paths so /certificates etc. work on direct load.
+    "not_found_handling": "single-page-application"
+  }
+}
