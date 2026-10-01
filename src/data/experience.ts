@@ -2,15 +2,28 @@ import type { Experience } from "@/types/content";
 
 export const experience: Experience[] = [
   {
+    organization: "Lam Lab, Medical College of Wisconsin",
+    place: "Milwaukee, Wisconsin, USA",
+    position: "Graduate Student / Research Assistant",
+    duration: "Aug 2024 – Present",
+    responsibilities: [
+      "Working in the Department of Cell Biology, Neurobiology and Anatomy on how the immune system works in the central nervous system, and how the brain responds to injury and regenerates.",
+      "Using zebrafish and Danionella cerebrum, a tiny fish that stays transparent as an adult, so we can watch cells inside the living brain.",
+      "Doing hands-on molecular and fish work: cloning, plasmid preparation, microinjection, genotyping and live fluorescence imaging.",
+      "Writing Python code to process and quantify large in vivo imaging datasets.",
+    ],
+    researchAdvisor: "Dr. Pui-Ying (Penny) Lam",
+  },
+  {
     organization: "The Red-Green Research Centre",
     place: "Dhaka, Bangladesh",
     position: "Research Assistant",
-    duration: "Mar 2020 – Present",
+    duration: "Mar 2020 – Jul 2024",
     responsibilities: [
-      "Conducting research in Drug and Peptide design, Protein and RNA modeling, Molecular Docking, and Molecular Dynamics Simulation.",
-      "Interpretation of functional biochemistry data derived from modelled Protein and RNA using molecular dynamics.",
-      "Proficient in statistical analysis and programming languages including Python and R for scientific data analysis.",
-      'Providing training in "Computer Aided Drug and Peptide Design" to research interns and new researchers.',
+      "Conducted research in drug and peptide design, protein and RNA modeling, molecular docking and molecular dynamics simulation.",
+      "Interpreted functional biochemistry data from modelled proteins and RNA using molecular dynamics.",
+      "Used Python and R for statistical analysis of scientific data.",
+      'Trained research interns and new researchers in "Computer Aided Drug and Peptide Design".',
     ],
     researchAdvisor: "Dr. Mohammad A. Halim",
   },

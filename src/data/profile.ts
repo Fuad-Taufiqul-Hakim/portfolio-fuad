@@ -5,16 +5,17 @@ export const profile = {
   name: "Fuad Taufiqul Hakim",
   shortName: "Fuad",
   greeting: "Hello! It's me",
-  roles: ["Biotechnologist", "Programmer", "Researcher"],
+  roles: ["Neuroscience Researcher", "Biotechnologist", "Programmer"],
   tagline:
-    "Biotechnologist and self-taught programmer working where biology meets computation — drug & peptide design, molecular dynamics and bioinformatics.",
+    "Graduate researcher at the Medical College of Wisconsin, studying immunity and regeneration in the living brain with see-through fish, live imaging and code.",
   photo: img("personal/img-20230823-110047"),
   bio: [
-    "I am a biotechnologist and self-taught programmer hailing from Bangladesh, where I completed my B. Sc. and M. Sc. in Biotechnology at the University of Rajshahi. In parallel with my biotech studies, I ventured into programming, recognizing its potential to amplify my research capabilities in the biotech realm.",
-    "My professional interests span the realms of biology and computation, and I firmly believe that multidisciplinary knowledge is the key to unlocking sustainable solutions. Consequently, I am actively expanding my expertise in areas such as drug design, computational chemistry, and programming, driven by an unwavering enthusiasm for continuous learning and a deep commitment to contributing meaningfully to the betterment of humanity on a global scale.",
+    "I'm a graduate student and research assistant in the Lam Lab at the Medical College of Wisconsin in Milwaukee. Our lab builds small-molecule and chemo-optogenetic tools and combines them with live imaging to study the immune system of the central nervous system. Most of my work uses zebrafish and Danionella cerebrum, a tiny fish that stays transparent as an adult, which lets us watch cells inside a living brain as it responds to injury and repairs itself.",
+    "Before coming to the US, I completed my B.Sc. and M.Sc. in Genetic Engineering and Biotechnology at the University of Rajshahi in Bangladesh. I spent four years at The Red-Green Research Centre in Dhaka working on computer-aided drug and peptide design, molecular docking and molecular dynamics. Along the way I taught myself to program, and code is now a part of almost every project I work on.",
+    "I enjoy working where wet-lab biology meets computation. I think the most useful answers to biological problems come from mixing disciplines, and I'm always happy to learn a new technique if it helps answer a question.",
   ],
   email: "fuadtaufiq98@gmail.com",
-  location: "Dinajpur, Bangladesh",
+  location: "Milwaukee, Wisconsin, USA",
 };
 
 // Previously the home-page banner carousel.

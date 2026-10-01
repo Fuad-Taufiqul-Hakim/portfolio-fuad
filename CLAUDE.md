@@ -47,7 +47,7 @@ There is no test suite; verify with `lint`, `typecheck`, `build`, then check the
 - **Contact form** (`sections/contact/Contact.tsx`):
   - Posts to Web3Forms using `VITE_WEB3FORMS_KEY`. The key is public by design and baked in at build time.
   - Without a key, the submit button is disabled and a "please email me" notice shows.
-  - Never show the owner's phone number or street address on the site. Only the email and "Dinajpur, Bangladesh" appear.
+  - Never show the owner's phone number or street address on the site. Only the email and the city-level location in `profile.location` (currently "Milwaukee, Wisconsin, USA") appear.
 
 ## Deployment
 
@@ -55,3 +55,26 @@ The site deploys as a Cloudflare Workers static-assets project via Git integrati
 - `wrangler.jsonc` sets `not_found_handling: "single-page-application"` for deep links.
 - Do **not** add `public/_redirects`: Workers rejects `/* /index.html 200` as an infinite loop.
 - `VITE_WEB3FORMS_KEY` must be a Cloudflare *build* variable, not a runtime one.
+
+## Project history & owner preferences
+
+Keep this section updated at the end of every session. Add a dated bullet for what was done and any new decisions or preferences.
+
+**Owner:** Fuad Taufiqul Hakim (fuadtaufiq98@gmail.com). Graduate Student / Research Assistant, Lam Lab, Medical College of Wisconsin (since Aug 2024). Google Scholar: https://scholar.google.com/citations?user=ZOXkiTMAAAAJ
+
+**Preferences:**
+- Record all context here; never rely on resuming old sessions.
+- Site writing should be accurate and sound natural, not overblown.
+- Dark-first design with light toggle, glass cards, brand gradient. Keep the same pages/tabs as the original site.
+- Programming skills grid stays 3 columns with equal-sized tiles.
+
+**Log:**
+- 2026-10-01: Rebuilt the old site (now in `legacy/`) with React 19, TypeScript, Vite 8 and Tailwind 4. Moved content to `src/data/`. Converted images to WebP (137 MB → 4.6 MB). Added a lazy 3D DNA helix and a Web3Forms contact form.
+- 2026-10-01: Fixed the Cloudflare deploy with wrangler SPA routing (`_redirects` was rejected).
+- 2026-10-01: Polished the skills, album, publication and certificate cards. Restored the 3-column programming skills layout and brightened the "Offered by" label.
+- 2026-10-01: Added CLAUDE.md. Updated the current position to the MCW Lam Lab and rewrote the About section.
+
+**Open questions for the owner** (unconfirmed content currently on the site):
+- Do the Lam Lab technique bullets (cloning, plasmid prep, microinjection, genotyping, live imaging, Python image analysis) match their real work? They came from the lab's job posts.
+- Name of the graduate program, to add as the top Education entry (Aug 2024 – Present).
+- Confirm Milwaukee as the site location (`profile.location`).
