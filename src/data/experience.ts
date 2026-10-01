@@ -7,10 +7,10 @@ export const experience: Experience[] = [
     position: "Graduate Student / Research Assistant",
     duration: "Aug 2024 – Present",
     responsibilities: [
-      "Working in the Department of Cell Biology, Neurobiology and Anatomy on how the immune system works in the central nervous system, and how the brain responds to injury and regenerates.",
+      "Studying neuroregeneration in the Department of Cell Biology, Neurobiology and Anatomy, with a focus on what immune cells do while the central nervous system repairs itself after injury.",
       "Using zebrafish and Danionella cerebrum, a tiny fish that stays transparent as an adult, so we can watch cells inside the living brain.",
-      "Doing hands-on molecular and fish work: cloning, plasmid preparation, microinjection, genotyping and live fluorescence imaging.",
-      "Writing Python code to process and quantify large in vivo imaging datasets.",
+      "Following the same animals over days with longitudinal live imaging and confocal microscopy to track immune cells through regeneration.",
+      "Using single-cell RNA sequencing to profile immune cell populations and how they change as the tissue regenerates.",
     ],
     researchAdvisor: "Dr. Pui-Ying (Penny) Lam",
   },

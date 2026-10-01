@@ -73,8 +73,4 @@ Keep this section updated at the end of every session. Add a dated bullet for wh
 - 2026-10-01: Fixed the Cloudflare deploy with wrangler SPA routing (`_redirects` was rejected).
 - 2026-10-01: Polished the skills, album, publication and certificate cards. Restored the 3-column programming skills layout and brightened the "Offered by" label.
 - 2026-10-01: Added CLAUDE.md. Updated the current position to the MCW Lam Lab and rewrote the About section.
-
-**Open questions for the owner** (unconfirmed content currently on the site):
-- Do the Lam Lab technique bullets (cloning, plasmid prep, microinjection, genotyping, live imaging, Python image analysis) match their real work? They came from the lab's job posts.
-- Name of the graduate program, to add as the top Education entry (Aug 2024 – Present).
-- Confirm Milwaukee as the site location (`profile.location`).
+- 2026-10-01: Owner confirmed their work (neuroregeneration, immune cell biology during regeneration, scRNA-seq, confocal and longitudinal live imaging); Lam Lab bullets now reflect that instead of the job-post techniques. Added MCW as the top Education entry (entered via IDP, now in the CBNA graduate program). Confirmed Milwaukee as the site location.

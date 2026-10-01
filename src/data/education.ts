@@ -2,6 +2,14 @@ import type { Education } from "@/types/content";
 
 export const education: Education[] = [
   {
+    institution: "Medical College of Wisconsin",
+    location: "Milwaukee, Wisconsin, USA",
+    level: "Graduate Student",
+    date: "Aug 2024 – Present",
+    department: "Cell Biology, Neurobiology and Anatomy (CBNA) Graduate Program",
+    result: "Entered through the Interdisciplinary Program in Biomedical Sciences (IDP)",
+  },
+  {
     institution: "University of Rajshahi",
     location: "Rajshahi, Bangladesh",
     level: "M. Sc. Student (Thesis Group)",
