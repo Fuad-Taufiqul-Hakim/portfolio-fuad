@@ -11,18 +11,18 @@ export default function Skills() {
       <div className="grid gap-6 lg:grid-cols-2">
         <Reveal className="glass p-6 sm:p-8 lg:col-span-2">
           <CardTitle icon={<Code2 className="size-5" />}>Programming Skills</CardTitle>
-          <div className="space-y-6">
+          <div className="grid gap-8 lg:grid-cols-3">
             {programmingSkills.map((group) => (
-              <div key={group.title} className="grid gap-3 md:grid-cols-[9rem_1fr] md:items-center">
-                <h4 className="text-xs font-semibold tracking-widest text-zinc-500 uppercase">
+              <div key={group.title}>
+                <h4 className="mb-3 text-xs font-semibold tracking-widest text-zinc-500 uppercase">
                   {group.title}
                 </h4>
-                {/* Fixed-size tiles so every group looks identical regardless of label length. */}
-                <ul className="flex flex-wrap gap-3">
+                {/* Equal-width grid columns + fixed height → every tile is the same size. */}
+                <ul className="grid grid-cols-3 gap-3">
                   {group.skills.map((skill) => (
                     <li
                       key={skill.name}
-                      className="flex size-24 flex-col items-center justify-center gap-2 rounded-xl border border-zinc-200 bg-white/70 transition hover:-translate-y-0.5 hover:border-brand-pink/40 hover:shadow-lg hover:shadow-brand-pink/10 dark:border-white/10 dark:bg-white/[0.03]"
+                      className="flex h-24 flex-col items-center justify-center gap-2 rounded-xl border border-zinc-200 bg-white/70 transition hover:-translate-y-0.5 hover:border-brand-pink/40 hover:shadow-lg hover:shadow-brand-pink/10 dark:border-white/10 dark:bg-white/[0.03]"
                     >
                       <img
                         src={skill.image}

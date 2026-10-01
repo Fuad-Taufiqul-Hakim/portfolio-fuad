@@ -70,7 +70,9 @@ export default function CertificatesPage() {
                     </ExternalLink>
                     <p className="flex items-center gap-2 px-4 py-3 text-sm">
                       <Award aria-hidden className="size-4 shrink-0 text-brand-orange" />
-                      <span className="text-zinc-500">Offered by</span>
+                      <span className="font-medium text-zinc-600 dark:text-zinc-200">
+                        Offered by
+                      </span>
                       <span className="font-semibold text-pink-600 dark:text-pink-400">
                         {c.organization}
                       </span>
