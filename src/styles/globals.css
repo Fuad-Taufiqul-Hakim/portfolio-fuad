@@ -1,0 +1,51 @@
+@import "tailwindcss";
+@import "@fontsource-variable/inter";
+@import "@fontsource/poppins/500.css";
+@import "@fontsource/poppins/600.css";
+@import "@fontsource/poppins/700.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Inter Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Poppins", ui-sans-serif, system-ui, sans-serif;
+
+  /* Brand palette carried over from the original site */
+  --color-brand-pink: #ff2171;
+  --color-brand-orange: #ff8400;
+  --color-brand-teal: #22a699;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem; /* keep anchored sections clear of the sticky navbar */
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+  body {
+    @apply bg-zinc-50 font-sans text-zinc-700 antialiased dark:bg-zinc-950 dark:text-zinc-300;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply font-display text-zinc-900 dark:text-white;
+  }
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-brand-pink;
+  }
+  ::selection {
+    @apply bg-brand-pink/30;
+  }
+}
+
+@utility text-gradient {
+  @apply bg-gradient-to-r from-brand-pink via-brand-orange to-brand-pink bg-clip-text text-transparent;
+}
+
+@utility glass {
+  @apply rounded-2xl border border-zinc-200 bg-white/70 shadow-sm backdrop-blur-md dark:border-white/10 dark:bg-white/[0.04] dark:shadow-none;
+}

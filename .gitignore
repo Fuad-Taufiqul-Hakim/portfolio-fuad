@@ -1,0 +1,12 @@
+node_modules
+dist
+*.local
+.env
+.env.*
+!.env.example
+.DS_Store
+legacy/node_modules
+legacy/dist
+*.tsbuildinfo
+# Old site + 138 MB of original photos: kept on disk for reference, not in the repo
+legacy/
