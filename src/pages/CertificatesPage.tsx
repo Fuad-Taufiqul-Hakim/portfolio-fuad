@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Award } from "lucide-react";
 import { certificateCategories } from "@/data/certificates";
 import { sectionTitles } from "@/data/site";
 import { SectionHeading } from "@/components/ui/Section";
@@ -67,9 +68,10 @@ export default function CertificatesPage() {
                         className="size-full object-contain transition duration-500 group-hover:scale-[1.03]"
                       />
                     </ExternalLink>
-                    <p className="px-4 py-3 text-sm">
-                      <span className="text-zinc-500">Offered by </span>
-                      <span className="font-medium text-zinc-900 dark:text-white">
+                    <p className="flex items-center gap-2 px-4 py-3 text-sm">
+                      <Award aria-hidden className="size-4 shrink-0 text-brand-orange" />
+                      <span className="text-zinc-500">Offered by</span>
+                      <span className="font-semibold text-pink-600 dark:text-pink-400">
                         {c.organization}
                       </span>
                     </p>

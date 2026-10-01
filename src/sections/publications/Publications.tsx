@@ -12,8 +12,8 @@ export default function Publications() {
       <ul className="space-y-6">
         {publications.map((pub) => (
           <li key={pub.doi}>
-            <Reveal className="glass grid overflow-hidden md:grid-cols-[18rem_1fr]">
-              <div className="flex items-center justify-center bg-white p-4">
+            <Reveal className="glass group grid overflow-hidden md:grid-cols-[18rem_1fr]">
+              <div className="flex items-center justify-center overflow-hidden bg-white p-4">
                 <img
                   src={pub.image}
                   alt={`Graphical abstract: ${pub.title}`}
@@ -21,7 +21,7 @@ export default function Publications() {
                   height={400}
                   loading="lazy"
                   decoding="async"
-                  className="max-h-56 w-full object-contain"
+                  className="max-h-56 w-full object-contain transition duration-700 group-hover:scale-105"
                 />
               </div>
               <div className="flex flex-col p-6 sm:p-8">
